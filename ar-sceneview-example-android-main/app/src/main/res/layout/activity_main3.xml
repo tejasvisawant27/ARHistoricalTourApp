@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/uthirakosamangaitemple"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ScrollView
+                    android:id="@+id/scrollView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintTop_toBottomOf="@id/imageView"
+                    app:layout_constraintBottom_toTopOf="@id/buttonBar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                                <!-- Add your information text views here -->
+                                <!-- Example: -->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Uthirakosamangai, also known as Mangalanatha Swamy temple, is a Shiva temple situated near Ramanathapuram in the Ramanathapuram district of Tamil Nadu. The temple has been in bloom for 3000 years ago. Uthirakosamangai temple is located on an area of about 20 acres.
+
+The temple is considered sacred along the lines of Ramanathapuram, Sethu Madhava Theertham and Lakshmana Theertham.[1] The temple is a prominent tourist destination of Ramanathapuram district.[2]
+
+The temple has numerous shrines, with those of Mangalanathar, Mangalambigai and Natarajar being the most prominent. The temple houses a 6 ft (1.8 m) tall ancient maragatha Nataraja idol carved out of emerald, being the one of its kind. The temple has six daily rituals at various times from 5:30 a.m. to 8 p.m., and six yearly festivals on its calendar. The temple is maintained and administered by the Hindu Religious and Endowment Board of the Government of Tamil Nadu."
+                                    android:padding="16dp"/>
+                                <!-- Add more text views as needed -->
+                        </LinearLayout>
+
+                </ScrollView>
+
+                <LinearLayout
+                    android:id="@+id/buttonBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="16dp">
+
+                        <Button
+                            android:id="@+id/backButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Back"
+                            android:onClick="openMain2"
+                            android:layout_weight="1"/>
+
+                        <Button
+                            android:id="@+id/nextButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Next"
+                            android:onClick="openMain4"
+                            android:layout_weight="1"
+                            android:layout_marginStart="16dp"/>
+
+                </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
