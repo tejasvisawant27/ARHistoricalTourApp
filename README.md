@@ -11,9 +11,6 @@ Interactive Models: Supports rotation, scaling, and 360-degree viewing of 3D mod
 Educational Content: Includes historical context, facts each model.
 User-Friendly Interface: Simple and intuitive touch gestures for interacting with models.
 
-#Screenshots
-
-
 #Getting Started
 
 Prerequisites
